@@ -1,0 +1,21 @@
+﻿  Compiling CUDA source file src\main.cu...
+  
+  D:\Microsoft Visual Studio\Projects\RayTracingByCuda>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\HostX86\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc142.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\main.cu.obj "D:\Microsoft Visual Studio\Projects\RayTracingByCuda\src\main.cu" 
+D:\Microsoft Visual Studio\Projects\RayTracingByCuda\src\../headers/vec3.h(1): warning : unrecognized #pragma
+  
+D:\Microsoft Visual Studio\Projects\RayTracingByCuda\src\../headers/ray.h(1): warning : unrecognized #pragma
+  
+D:\Microsoft Visual Studio\Projects\RayTracingByCuda\headers\vec3.h(1): warning : unrecognized #pragma
+  
+D:\Microsoft Visual Studio\Projects\RayTracingByCuda\headers\vec3.h(6): error : invalid redeclaration of type name "vec3"
+  D:\Microsoft Visual Studio\Projects\RayTracingByCuda\src\../headers/vec3.h(6): here
+  
+D:\Microsoft Visual Studio\Projects\RayTracingByCuda\src\../headers/ray.h(12): error : "origin" has already been declared in the current scope
+  
+D:\Microsoft Visual Studio\Projects\RayTracingByCuda\src\../headers/ray.h(13): error : "direction" has already been declared in the current scope
+  
+D:/Microsoft Visual Studio/Projects/RayTracingByCuda/src/main.cu(24): error : call of an object of a class type without appropriate operator() or conversion functions to pointer-to-function type
+  
+  4 errors detected in the compilation of "D:/Microsoft Visual Studio/Projects/RayTracingByCuda/src/main.cu".
+  main.cu
+D:\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\CUDA 11.1.targets(785,9): error MSB3721: 命令“"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\HostX86\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc142.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\main.cu.obj "D:\Microsoft Visual Studio\Projects\RayTracingByCuda\src\main.cu"”已退出，返回代码为 1。
