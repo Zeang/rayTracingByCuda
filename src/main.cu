@@ -1,6 +1,7 @@
 #include "cuda_runtime.h"
 #include "device_launch_parameters.h"
 #include <curand_kernel.h>
+#include <thrust/version.h>
 #include <iostream>
 #include <fstream>
 #include <math.h>
@@ -12,6 +13,7 @@
 #include "../headers/camera.h"
 #include "../headers/random.h"
 #include "../headers/material.h"
+#include "../headers/bvh.h"
 
 using namespace std;
 
@@ -96,7 +98,10 @@ __global__ void create_world(hitable** d_list, hitable** d_world, camera** d_cam
                 float choose_mat = RND;
                 vec3 center(a + RND, 0.2, b + RND);
                 if (choose_mat < 0.8f) {
-                    d_list[i++] = new sphere(center, 0.2,
+                    d_list[i++] = new moving_sphere(
+                        center,
+                        center + vec3(0, 0.5*RND, 0),
+                        0.0, 1.0, 0.2,
                         new lambertian(vec3(RND * RND, RND * RND, RND * RND)));
                 }
                 else if (choose_mat < 0.95f) {
@@ -111,8 +116,11 @@ __global__ void create_world(hitable** d_list, hitable** d_world, camera** d_cam
         d_list[i++] = new sphere(vec3(0, 1, 0), 1.0, new dielectric(1.5));
         d_list[i++] = new sphere(vec3(-4, 1, 0), 1.0, new lambertian(vec3(0.4, 0.2, 0.1)));
         d_list[i++] = new sphere(vec3(4, 1, 0), 1.0, new metal(vec3(0.7, 0.6, 0.5), 0.0));
-        *rand_state = local_rand_state;
-        *d_world = new hitable_list(d_list, 22 * 22 + 1 + 3);
+        /**rand_state = local_rand_state;*/
+        //*d_world = new hitable_list(d_list, 22 * 22 + 1 + 3);
+        printf("debug1\n");
+        *d_world = new bvh_node(d_list, 22 * 22 + 1 + 3, 0.0, 1.0, rand_state);
+        printf("debug2\n");
 
         vec3 lookfrom(13, 2, 3);
         vec3 lookat(0, 0, 0);
@@ -124,7 +132,9 @@ __global__ void create_world(hitable** d_list, hitable** d_world, camera** d_cam
             30.0,
             float(nx) / float(ny),
             aperture,
-            dist_to_focus);
+            dist_to_focus,
+            0.0f,
+            1.0f);
     }
 }
 
@@ -144,7 +154,7 @@ int main(void)
     int ns = 100;
     int tx = 8, ty = 8;
     ofstream outfile;
-    outfile.open("pic/rayTracing12.ppm");
+    outfile.open("pic/rayTracingMotionBlurWithBvh.ppm");
     outfile << "P3\n" << nx << " " << ny << "\n255\n";
 
     int num_pixels = nx * ny;
@@ -211,8 +221,8 @@ int main(void)
     checkCudaErrors(cudaDeviceSynchronize());
     free_world << <1, 1 >> > (d_list, d_world, d_camera);
     checkCudaErrors(cudaGetLastError());
-    checkCudaErrors(cudaFree(d_camera));
     checkCudaErrors(cudaFree(d_world));
+    checkCudaErrors(cudaFree(d_camera));
     checkCudaErrors(cudaFree(d_list));
     checkCudaErrors(cudaFree(d_rand_state));
     checkCudaErrors(cudaFree(d_rand_state2));

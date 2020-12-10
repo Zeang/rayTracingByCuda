@@ -44,5 +44,11 @@
     <ClInclude Include="headers\material.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="headers\aabb.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\bvh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

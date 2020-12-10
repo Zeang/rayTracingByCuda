@@ -145,6 +145,8 @@
     <CudaCompile Include="src\main.cu" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="headers\aabb.h" />
+    <ClInclude Include="headers\bvh.h" />
     <ClInclude Include="headers\camera.h" />
     <ClInclude Include="headers\hitable.h" />
     <ClInclude Include="headers\hitable_list.h" />
