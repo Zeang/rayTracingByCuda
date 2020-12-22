@@ -20,34 +20,37 @@
     </CudaCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="headers\ray.h">
+    <ClInclude Include="util\common.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="headers\vec3.h">
+    <ClInclude Include="util\ray.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="headers\hitable.h">
+    <ClInclude Include="util\vec3.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="headers\sphere.h">
+    <ClInclude Include="hitables\hitable.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="headers\hitable_list.h">
+    <ClInclude Include="hitables\hitable_list.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="headers\random.h">
+    <ClInclude Include="hitables\sphere.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="headers\camera.h">
+    <ClInclude Include="hitables\aabb.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="headers\material.h">
+    <ClInclude Include="materials\material.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="headers\aabb.h">
+    <ClInclude Include="util\camera.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="headers\bvh.h">
+    <ClInclude Include="util\random.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hitables\bvh.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

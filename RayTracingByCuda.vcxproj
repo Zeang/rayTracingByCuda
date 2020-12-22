@@ -145,16 +145,17 @@
     <CudaCompile Include="src\main.cu" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="headers\aabb.h" />
-    <ClInclude Include="headers\bvh.h" />
-    <ClInclude Include="headers\camera.h" />
-    <ClInclude Include="headers\hitable.h" />
-    <ClInclude Include="headers\hitable_list.h" />
-    <ClInclude Include="headers\material.h" />
-    <ClInclude Include="headers\random.h" />
-    <ClInclude Include="headers\ray.h" />
-    <ClInclude Include="headers\sphere.h" />
-    <ClInclude Include="headers\vec3.h" />
+    <ClInclude Include="hitables\aabb.h" />
+    <ClInclude Include="hitables\bvh.h" />
+    <ClInclude Include="hitables\hitable.h" />
+    <ClInclude Include="hitables\hitable_list.h" />
+    <ClInclude Include="hitables\sphere.h" />
+    <ClInclude Include="materials\material.h" />
+    <ClInclude Include="util\camera.h" />
+    <ClInclude Include="util\common.h" />
+    <ClInclude Include="util\random.h" />
+    <ClInclude Include="util\ray.h" />
+    <ClInclude Include="util\vec3.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
