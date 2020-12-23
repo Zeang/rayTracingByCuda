@@ -53,5 +53,22 @@
     <ClInclude Include="hitables\bvh.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="util\randomGenerator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="util\util.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="util\scene.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="util\scene.cuh">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="util\util.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -154,8 +154,15 @@
     <ClInclude Include="util\camera.h" />
     <ClInclude Include="util\common.h" />
     <ClInclude Include="util\random.h" />
+    <ClInclude Include="util\randomGenerator.h" />
     <ClInclude Include="util\ray.h" />
+    <ClInclude Include="util\scene.cuh" />
+    <ClInclude Include="util\scene.h" />
+    <ClInclude Include="util\util.h" />
     <ClInclude Include="util\vec3.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="util\util.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

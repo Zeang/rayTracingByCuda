@@ -5,15 +5,15 @@
 
 class hitable_list : public hitable {
 public:
-	__device__ hitable_list(){}
-	__device__ hitable_list(hitable** l, int n) { list = l; list_size = n; }
-	__device__ virtual bool hit(const ray& r, float tmin, float tmax, hit_record& rec) const;
-	__device__ virtual bool bounding_box(float t0, float t1, aabb& box) const;
+	CUDA_DEV hitable_list(){}
+	CUDA_DEV hitable_list(hitable** l, int n) { list = l; list_size = n; }
+	CUDA_DEV virtual bool hit(const ray& r, float tmin, float tmax, hit_record& rec) const;
+	CUDA_DEV virtual bool bounding_box(float t0, float t1, aabb& box) const;
 	hitable** list;
 	int list_size;
 };
 
-__device__ bool hitable_list::bounding_box(float t0, float t1, aabb& box) const {
+CUDA_DEV bool hitable_list::bounding_box(float t0, float t1, aabb& box) const {
 	if (list_size < 1) return false;
 	aabb temp_box;
 	bool first_true = list[0]->bounding_box(t0, t1, temp_box);
@@ -31,7 +31,7 @@ __device__ bool hitable_list::bounding_box(float t0, float t1, aabb& box) const 
 	return true;
 }
 
-__device__ bool hitable_list::hit(const ray& r, float tmin, float tmax, hit_record& rec) const {
+CUDA_DEV bool hitable_list::hit(const ray& r, float tmin, float tmax, hit_record& rec) const {
 	hit_record temp_rec;
 	bool hit_anything = false;
 	float closest_so_far = tmax;

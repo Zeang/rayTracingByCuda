@@ -640,6 +640,7 @@ D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\cstd
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\cstdio
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\cstdlib
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\cstring
+D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\ctime
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\cwchar
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\eh.h
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\exception
@@ -647,6 +648,7 @@ D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstr
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\functional
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\initializer_list
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\intrin0.h
+D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\iomanip
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\ios
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\iosfwd
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\iostream
@@ -659,6 +661,7 @@ D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\memo
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\new
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\ostream
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\sal.h
+D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\sstream
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\stdexcept
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\stdint.h
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\streambuf
@@ -685,7 +688,9 @@ D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\xkey
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\xlocale
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\xlocinfo
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\xlocinfo.h
+D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\xlocmon
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\xlocnum
+D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\xloctime
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\xmemory
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\xstddef
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\xstring
@@ -705,6 +710,7 @@ D:\Microsoft Visual Studio\Projects\RayTracingByCuda\src\..\materials\material.h
 D:\Microsoft Visual Studio\Projects\RayTracingByCuda\src\..\util\camera.h
 D:\Microsoft Visual Studio\Projects\RayTracingByCuda\src\..\util\random.h
 D:\Microsoft Visual Studio\Projects\RayTracingByCuda\src\..\util\ray.h
+D:\Microsoft Visual Studio\Projects\RayTracingByCuda\src\..\util\util.h
 D:\Microsoft Visual Studio\Projects\RayTracingByCuda\src\main.cu
 D:\Microsoft Visual Studio\Projects\RayTracingByCuda\util\common.h
 D:\Microsoft Visual Studio\Projects\RayTracingByCuda\util\vec3.h
