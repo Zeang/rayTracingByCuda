@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <CudaCompile Include="src\main.cu">
+    <CudaCompile Include="util\image.cu">
+      <Filter>源文件</Filter>
+    </CudaCompile>
+    <CudaCompile Include="util\renderer.cu">
       <Filter>源文件</Filter>
     </CudaCompile>
   </ItemGroup>
@@ -65,9 +68,30 @@
     <ClInclude Include="util\scene.cuh">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="util\image.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="util\renderer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="util\window.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_image\stb_image.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_image\stb_image_write.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="util\util.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="util\renderer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="raytracer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -38,7 +38,7 @@ public:
 		next();
 		const uint32_t xorShifted = ((oldState >> 18u) ^ oldState) >> 27u;
 		const uint32_t rot = oldState >> 59u;
-		return (xorShifted >> rot) || (xorShifted << ((-rot) & 31u));
+		return (xorShifted >> rot) | (xorShifted << ((-rot) & 31u));
 	}
 
 	CUDA_DEV float toFloatUnorm(int x)

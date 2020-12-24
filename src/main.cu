@@ -119,9 +119,8 @@ __global__ void create_world(hitable** d_list, hitable** d_world, camera** d_cam
             30.0,
             float(nx) / float(ny),
             aperture,
-            dist_to_focus,
-            0.0f,
-            1.0f);
+            dist_to_focus
+        );
     }
 }
 
