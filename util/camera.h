@@ -1,5 +1,4 @@
-#ifndef CAMERAH
-#define CAMERAH
+#pragma once
 
 #include "ray.h"
 #include "util.h"
@@ -115,7 +114,7 @@ public:
         if (direction == FORWARD)
         {
             lookFrom += this->v * stepScale;
-            lookAt += this->v * stepScale;;
+            lookAt += this->v * stepScale;
         }
         if (direction == BACKWARD)
         {
@@ -184,5 +183,3 @@ public:
 //    float time0, time1;
 //    float lens_radius;
 //};
-
-#endif

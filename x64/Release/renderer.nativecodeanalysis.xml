@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\include\</FILEPATH>
+      <FILENAME>cuda_runtime.h</FILENAME>
+      <LINE>311</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>枚举类型“cudaError”未设定范围。相比于 "enum"，首选 "enum class" (Enum.3)。</DESCRIPTION>
+    <FUNCTION>cudaEventCreate</FUNCTION>
+    <DECORATED>?cudaEventCreate@@YA?AW4cudaError@@PEAPEAUCUevent_st@@I@Z</DECORATED>
+    <FUNCLINE>306</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\include\</FILEPATH>
+      <FILENAME>curand_kernel.h</FILENAME>
+      <LINE>313</LINE>
+      <COLUMN>36</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。</DESCRIPTION>
+    <FUNCTION>__curand_matmat</FUNCTION>
+    <DECORATED>?__curand_matmat@@YAXPEAI0H@Z</DECORATED>
+    <FUNCLINE>309</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\util\</FILEPATH>
+      <FILENAME>vec3.h</FILENAME>
+      <LINE>13</LINE>
+      <COLUMN>17</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>未初始化变量 vec3::e。始终初始化成员变量(type.6)。</DESCRIPTION>
+    <FUNCTION>vec3::{ctor}</FUNCTION>
+    <DECORATED>??0vec3@@QEAA@XZ</DECORATED>
+    <FUNCLINE>13</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>vec3::e</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\util\</FILEPATH>
+      <FILENAME>ray.h</FILENAME>
+      <LINE>8</LINE>
+      <COLUMN>14</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>未初始化变量 ray::_time。始终初始化成员变量(type.6)。</DESCRIPTION>
+    <FUNCTION>ray::{ctor}</FUNCTION>
+    <DECORATED>??0ray@@QEAA@XZ</DECORATED>
+    <FUNCLINE>8</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>ray::_time</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\util\</FILEPATH>
+      <FILENAME>camera.h</FILENAME>
+      <LINE>39</LINE>
+      <COLUMN>17</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>未初始化变量 camera::halfHeight。始终初始化成员变量(type.6)。</DESCRIPTION>
+    <FUNCTION>camera::{ctor}</FUNCTION>
+    <DECORATED>??0camera@@QEAA@XZ</DECORATED>
+    <FUNCLINE>39</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>camera::halfHeight</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\util\</FILEPATH>
+      <FILENAME>camera.h</FILENAME>
+      <LINE>39</LINE>
+      <COLUMN>17</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>未初始化变量 camera::halfWidth。始终初始化成员变量(type.6)。</DESCRIPTION>
+    <FUNCTION>camera::{ctor}</FUNCTION>
+    <DECORATED>??0camera@@QEAA@XZ</DECORATED>
+    <FUNCLINE>39</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>camera::halfWidth</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\util\</FILEPATH>
+      <FILENAME>camera.h</FILENAME>
+      <LINE>39</LINE>
+      <COLUMN>17</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>未初始化变量 camera::focusDist。始终初始化成员变量(type.6)。</DESCRIPTION>
+    <FUNCTION>camera::{ctor}</FUNCTION>
+    <DECORATED>??0camera@@QEAA@XZ</DECORATED>
+    <FUNCLINE>39</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>camera::focusDist</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\util\</FILEPATH>
+      <FILENAME>camera.h</FILENAME>
+      <LINE>39</LINE>
+      <COLUMN>17</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>未初始化变量 camera::aperture。始终初始化成员变量(type.6)。</DESCRIPTION>
+    <FUNCTION>camera::{ctor}</FUNCTION>
+    <DECORATED>??0camera@@QEAA@XZ</DECORATED>
+    <FUNCLINE>39</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>camera::aperture</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\util\</FILEPATH>
+      <FILENAME>camera.h</FILENAME>
+      <LINE>39</LINE>
+      <COLUMN>17</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>未初始化变量 camera::aspect。始终初始化成员变量(type.6)。</DESCRIPTION>
+    <FUNCTION>camera::{ctor}</FUNCTION>
+    <DECORATED>??0camera@@QEAA@XZ</DECORATED>
+    <FUNCLINE>39</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>camera::aspect</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\util\</FILEPATH>
+      <FILENAME>camera.h</FILENAME>
+      <LINE>39</LINE>
+      <COLUMN>17</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>未初始化变量 camera::vfov。始终初始化成员变量(type.6)。</DESCRIPTION>
+    <FUNCTION>camera::{ctor}</FUNCTION>
+    <DECORATED>??0camera@@QEAA@XZ</DECORATED>
+    <FUNCLINE>39</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>camera::vfov</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\util\</FILEPATH>
+      <FILENAME>camera.h</FILENAME>
+      <LINE>39</LINE>
+      <COLUMN>17</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>未初始化变量 camera::lensRadius。始终初始化成员变量(type.6)。</DESCRIPTION>
+    <FUNCTION>camera::{ctor}</FUNCTION>
+    <DECORATED>??0camera@@QEAA@XZ</DECORATED>
+    <FUNCLINE>39</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>camera::lensRadius</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\util\</FILEPATH>
+      <FILENAME>camera.h</FILENAME>
+      <LINE>45</LINE>
+      <COLUMN>17</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>未初始化变量 camera::focusDist。始终初始化成员变量(type.6)。</DESCRIPTION>
+    <FUNCTION>camera::{ctor}</FUNCTION>
+    <DECORATED>??0camera@@QEAA@Vvec3@@00MM@Z</DECORATED>
+    <FUNCLINE>45</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>camera::focusDist</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\util\</FILEPATH>
+      <FILENAME>camera.h</FILENAME>
+      <LINE>45</LINE>
+      <COLUMN>17</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>未初始化变量 camera::aperture。始终初始化成员变量(type.6)。</DESCRIPTION>
+    <FUNCTION>camera::{ctor}</FUNCTION>
+    <DECORATED>??0camera@@QEAA@Vvec3@@00MM@Z</DECORATED>
+    <FUNCLINE>45</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>camera::aperture</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\util\</FILEPATH>
+      <FILENAME>camera.h</FILENAME>
+      <LINE>45</LINE>
+      <COLUMN>17</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>未初始化变量 camera::lensRadius。始终初始化成员变量(type.6)。</DESCRIPTION>
+    <FUNCTION>camera::{ctor}</FUNCTION>
+    <DECORATED>??0camera@@QEAA@Vvec3@@00MM@Z</DECORATED>
+    <FUNCLINE>45</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>camera::lensRadius</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\util\</FILEPATH>
+      <FILENAME>camera.h</FILENAME>
+      <LINE>112</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>枚举类型“cameraMovement”未设定范围。相比于 "enum"，首选 "enum class" (Enum.3)。</DESCRIPTION>
+    <FUNCTION>camera::translate</FUNCTION>
+    <DECORATED>?translate@camera@@QEAAXW4cameraMovement@@M@Z</DECORATED>
+    <FUNCLINE>112</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\util\</FILEPATH>
+      <FILENAME>image.h</FILENAME>
+      <LINE>30</LINE>
+      <COLUMN>44</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。</DESCRIPTION>
+    <FUNCTION>Image::{ctor}</FUNCTION>
+    <DECORATED>??0Image@@QEAA@_N0HHHH@Z</DECORATED>
+    <FUNCLINE>24</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\hitables\</FILEPATH>
+      <FILENAME>sphere.h</FILENAME>
+      <LINE>8</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>未初始化变量 sphere::radius。始终初始化成员变量(type.6)。</DESCRIPTION>
+    <FUNCTION>sphere::{ctor}</FUNCTION>
+    <DECORATED>??0sphere@@QEAA@XZ</DECORATED>
+    <FUNCLINE>8</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>sphere::radius</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\hitables\</FILEPATH>
+      <FILENAME>sphere.h</FILENAME>
+      <LINE>8</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>未初始化变量 sphere::mat_ptr。始终初始化成员变量(type.6)。</DESCRIPTION>
+    <FUNCTION>sphere::{ctor}</FUNCTION>
+    <DECORATED>??0sphere@@QEAA@XZ</DECORATED>
+    <FUNCLINE>8</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>sphere::mat_ptr</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\hitables\</FILEPATH>
+      <FILENAME>sphere.h</FILENAME>
+      <LINE>46</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>未初始化变量 moving_sphere::time0。始终初始化成员变量(type.6)。</DESCRIPTION>
+    <FUNCTION>moving_sphere::{ctor}</FUNCTION>
+    <DECORATED>??0moving_sphere@@QEAA@XZ</DECORATED>
+    <FUNCLINE>46</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>moving_sphere::time0</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\hitables\</FILEPATH>
+      <FILENAME>sphere.h</FILENAME>
+      <LINE>46</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>未初始化变量 moving_sphere::time1。始终初始化成员变量(type.6)。</DESCRIPTION>
+    <FUNCTION>moving_sphere::{ctor}</FUNCTION>
+    <DECORATED>??0moving_sphere@@QEAA@XZ</DECORATED>
+    <FUNCLINE>46</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>moving_sphere::time1</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\hitables\</FILEPATH>
+      <FILENAME>sphere.h</FILENAME>
+      <LINE>46</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>未初始化变量 moving_sphere::radius。始终初始化成员变量(type.6)。</DESCRIPTION>
+    <FUNCTION>moving_sphere::{ctor}</FUNCTION>
+    <DECORATED>??0moving_sphere@@QEAA@XZ</DECORATED>
+    <FUNCLINE>46</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>moving_sphere::radius</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\hitables\</FILEPATH>
+      <FILENAME>sphere.h</FILENAME>
+      <LINE>46</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>未初始化变量 moving_sphere::mat_ptr。始终初始化成员变量(type.6)。</DESCRIPTION>
+    <FUNCTION>moving_sphere::{ctor}</FUNCTION>
+    <DECORATED>??0moving_sphere@@QEAA@XZ</DECORATED>
+    <FUNCLINE>46</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>moving_sphere::mat_ptr</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\hitables\</FILEPATH>
+      <FILENAME>hitable_list.h</FILENAME>
+      <LINE>8</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>未初始化变量 hitable_list::list_size。始终初始化成员变量(type.6)。</DESCRIPTION>
+    <FUNCTION>hitable_list::{ctor}</FUNCTION>
+    <DECORATED>??0hitable_list@@QEAA@XZ</DECORATED>
+    <FUNCLINE>8</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>hitable_list::list_size</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\hitables\</FILEPATH>
+      <FILENAME>hitable_list.h</FILENAME>
+      <LINE>8</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>未初始化变量 hitable_list::list。始终初始化成员变量(type.6)。</DESCRIPTION>
+    <FUNCTION>hitable_list::{ctor}</FUNCTION>
+    <DECORATED>??0hitable_list@@QEAA@XZ</DECORATED>
+    <FUNCLINE>8</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>hitable_list::list</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\hitables\</FILEPATH>
+      <FILENAME>hitable.h</FILENAME>
+      <LINE>13</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>未初始化变量 hit_record::mat_ptr。始终初始化成员变量(type.6)。</DESCRIPTION>
+    <FUNCTION>hit_record::{ctor}</FUNCTION>
+    <DECORATED>??0hit_record@@QEAA@XZ</DECORATED>
+    <FUNCLINE>13</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>hit_record::mat_ptr</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\hitables\</FILEPATH>
+      <FILENAME>hitable.h</FILENAME>
+      <LINE>13</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>未初始化变量 hit_record::t。始终初始化成员变量(type.6)。</DESCRIPTION>
+    <FUNCTION>hit_record::{ctor}</FUNCTION>
+    <DECORATED>??0hit_record@@QEAA@XZ</DECORATED>
+    <FUNCLINE>13</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>hit_record::t</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\util\</FILEPATH>
+      <FILENAME>scene.h</FILENAME>
+      <LINE>48</LINE>
+      <COLUMN>81</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。</DESCRIPTION>
+    <FUNCTION>simpleScene2</FUNCTION>
+    <DECORATED>?simpleScene2@@YAPEAVhitable@@XZ</DECORATED>
+    <FUNCLINE>22</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\util\</FILEPATH>
+      <FILENAME>scene.h</FILENAME>
+      <LINE>48</LINE>
+      <COLUMN>106</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。</DESCRIPTION>
+    <FUNCTION>simpleScene2</FUNCTION>
+    <DECORATED>?simpleScene2@@YAPEAVhitable@@XZ</DECORATED>
+    <FUNCLINE>22</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\util\</FILEPATH>
+      <FILENAME>scene.h</FILENAME>
+      <LINE>48</LINE>
+      <COLUMN>131</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。</DESCRIPTION>
+    <FUNCTION>simpleScene2</FUNCTION>
+    <DECORATED>?simpleScene2@@YAPEAVhitable@@XZ</DECORATED>
+    <FUNCLINE>22</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\util\</FILEPATH>
+      <FILENAME>scene.h</FILENAME>
+      <LINE>66</LINE>
+      <COLUMN>38</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。</DESCRIPTION>
+    <FUNCTION>randomScene</FUNCTION>
+    <DECORATED>?randomScene@@YAPEAVhitable@@XZ</DECORATED>
+    <FUNCLINE>61</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\util\</FILEPATH>
+      <FILENAME>scene.h</FILENAME>
+      <LINE>83</LINE>
+      <COLUMN>81</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。</DESCRIPTION>
+    <FUNCTION>randomScene</FUNCTION>
+    <DECORATED>?randomScene@@YAPEAVhitable@@XZ</DECORATED>
+    <FUNCLINE>61</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\util\</FILEPATH>
+      <FILENAME>scene.h</FILENAME>
+      <LINE>83</LINE>
+      <COLUMN>106</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。</DESCRIPTION>
+    <FUNCTION>randomScene</FUNCTION>
+    <DECORATED>?randomScene@@YAPEAVhitable@@XZ</DECORATED>
+    <FUNCLINE>61</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\util\</FILEPATH>
+      <FILENAME>scene.h</FILENAME>
+      <LINE>83</LINE>
+      <COLUMN>131</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。</DESCRIPTION>
+    <FUNCTION>randomScene</FUNCTION>
+    <DECORATED>?randomScene@@YAPEAVhitable@@XZ</DECORATED>
+    <FUNCLINE>61</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

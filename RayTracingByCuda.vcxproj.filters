@@ -50,9 +50,6 @@
     <ClInclude Include="util\camera.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="util\random.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="hitables\bvh.h">
       <Filter>头文件</Filter>
     </ClInclude>

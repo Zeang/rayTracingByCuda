@@ -1,12 +1,12 @@
 #include "common.h"
 #include "renderer.h"
+#include "scene.cuh"
+#include "window.h"
+#include "camera.h"
 
 #include "../hitables/sphere.h"
 #include "../hitables/hitable_list.h"
-#include "camera.h"
 #include "../materials/material.h"
-#include "scene.cuh"
-#include "window.h"
 
 const int numHitables = 102;
 
@@ -65,8 +65,8 @@ void destroyWorldCuda(bool showWindow, hitable** list, hitable* world, Window* w
 	freeWorldCuda << <1, 1 >> > (list, &world);
 	checkCudaErrors(cudaGetLastError());
 	checkCudaErrors(cudaDeviceSynchronize());
-	checkCudaErrors(cudaFree(list));
-	checkCudaErrors(cudaFree(world));
+	// checkCudaErrors(cudaFree(list));
+	// checkCudaErrors(cudaFree(world));
 	checkCudaErrors(cudaFree(w));
 	checkCudaErrors(cudaFree(image));
 	checkCudaErrors(cudaFree(cam));
@@ -86,6 +86,7 @@ CUDA_GLOBAL void render(camera* cam, Image* image, hitable* world,
 
 	int pixelIndex = j * image->nx + i;
 
+	//printf("ir: %f, ig: %f, ib: %f\n", image->pixels[pixelIndex][0], image->pixels[pixelIndex][1], image->pixels[pixelIndex][2]);
 	for (int s = 0; s < nsBatch; ++s)
 	{
 		RandomGenerator rng(sampleCount * nsBatch + s, i * image->nx + j);
@@ -95,9 +96,9 @@ CUDA_GLOBAL void render(camera* cam, Image* image, hitable* world,
 
 		image->pixels[pixelIndex] += render->color(rng, r, world, 0);
 	}
-
+	
 	vec3 col = image->pixels[pixelIndex] / (sampleCount * nsBatch);
-
+	//printf("ir: %f, ig: %f, ib: %f\n", col[0], col[1], col[2]);
 	// Gamma encoding of images is used to optimize the usage of bits
 	// when encoding an image, or bandwidth used to transport an image,
 	// by taking advantage of the non-linear manner in which humans perceive

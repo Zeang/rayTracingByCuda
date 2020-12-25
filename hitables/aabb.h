@@ -1,5 +1,4 @@
-#ifndef AABBH
-#define AABBH
+#pragma once
 
 #include "../util/ray.h"
 
@@ -29,5 +28,3 @@ public:
 	
 	vec3 _min, _max;
 };
-
-#endif

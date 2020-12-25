@@ -30,7 +30,7 @@ public:
             if (world->hit(cur_ray, 0.001f, FLT_MAX, rec)) {
                 ray scattered;
                 vec3 attenuation;
-                if (rec.mat_ptr->scatter(cur_ray, rec, attenuation, cur_ray, rng)) {
+                if (rec.mat_ptr->scatter(cur_ray, rec, attenuation, scattered, rng)) {
                     cur_attenuation *= attenuation;
                     cur_ray = scattered;
                 }

@@ -161,7 +161,6 @@
     <ClInclude Include="util\camera.h" />
     <ClInclude Include="util\common.h" />
     <ClInclude Include="util\image.h" />
-    <ClInclude Include="util\random.h" />
     <ClInclude Include="util\randomGenerator.h" />
     <ClInclude Include="util\ray.h" />
     <ClInclude Include="util\renderer.h" />

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\include\</FILEPATH>
+      <FILENAME>cuda_runtime.h</FILENAME>
+      <LINE>311</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>枚举类型“cudaError”未设定范围。相比于 "enum"，首选 "enum class" (Enum.3)。</DESCRIPTION>
+    <FUNCTION>cudaEventCreate</FUNCTION>
+    <DECORATED>?cudaEventCreate@@YA?AW4cudaError@@PEAPEAUCUevent_st@@I@Z</DECORATED>
+    <FUNCLINE>306</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\include\</FILEPATH>
+      <FILENAME>curand_kernel.h</FILENAME>
+      <LINE>313</LINE>
+      <COLUMN>36</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。</DESCRIPTION>
+    <FUNCTION>__curand_matmat</FUNCTION>
+    <DECORATED>?__curand_matmat@@YAXPEAI0H@Z</DECORATED>
+    <FUNCLINE>309</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\util\</FILEPATH>
+      <FILENAME>vec3.h</FILENAME>
+      <LINE>13</LINE>
+      <COLUMN>17</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>未初始化变量 vec3::e。始终初始化成员变量(type.6)。</DESCRIPTION>
+    <FUNCTION>vec3::{ctor}</FUNCTION>
+    <DECORATED>??0vec3@@QEAA@XZ</DECORATED>
+    <FUNCLINE>13</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>vec3::e</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

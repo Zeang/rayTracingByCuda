@@ -84,6 +84,7 @@ void invokeRenderer(hitable* world, Window* w, Image* image, camera* cam, Render
         {
             w->updateImage(showWindow, writeImagePPM, writeImagePNG, ppmImageStream, w, cam, world, image, i + 1, image->fileOutputImage);
             w->pollEvents(image, image->fileOutputImage);
+            
             if (writeEveryImageToFile && (j % sampleNrToWrite == 0))
             {
                 w->moveCamera(image, image->fileOutputImage);
@@ -97,7 +98,7 @@ void invokeRenderer(hitable* world, Window* w, Image* image, camera* cam, Render
                 currentFileName += ".png";
                 // write png
                 stbi_write_png(currentFileName.c_str(), nx, ny, 3, image->fileOutputImage, nx * 3);
-
+                image->resetImage();
                 i = -1;
                 w->refresh = false;
             }

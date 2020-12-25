@@ -4,11 +4,11 @@
 CUDA_GLOBAL void cudaResetImageKernel(vec3* pixels, int nx, int ny)
 {
 	int i = threadIdx.x + blockIdx.x * blockDim.x;
-	int j = threadIdx.x + blockIdx.y * blockDim.y;
+	int j = threadIdx.y + blockIdx.y * blockDim.y;
 	if ((i >= nx) || (j >= ny))
 		return;
 	int pixelIndex = j * nx + i;
-	pixels[pixelIndex] = vec3(0, 0, 0);
+	pixels[pixelIndex] = vec3(0.0f, 0.0f, 0.0f);
 }
 #endif	// CUDA_ENABLED
 
