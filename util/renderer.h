@@ -54,5 +54,6 @@ public:
     void cudaRender(uint32_t* windowPixels, camera* cam, hitable* world, Image* image, int sampleCount, uint8_t* fileOutputImage);
 #else
     CUDA_HOSTDEV void render(int i, int j, uint32_t* windowPixels, Camera* cam, hitable* world, Image* image, int sampleCount, uint8_t* fileOutputImage);
+    CUDA_HOSTDEV void display(int i, int j, Image* image);
 #endif  // CUDA_ENABLED
 };

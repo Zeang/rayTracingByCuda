@@ -8,18 +8,56 @@
 #include "../hitables/hitable_list.h"
 #include "../materials/material.h"
 
-const int numHitables = 102;
+CUDA_DEV int numHitables = 102;
 
 #ifdef CUDA_ENABLED
 void initializeWorldCuda(bool showWindow, bool writeImagePPM,
 	bool writeImagePNG, hitable*** list, hitable** world, Window** w,
 	Image** image, camera** cam, Renderer** renderer)
 {
+	int choice = 3;
+
+	switch (choice)
+	{
+	case 0:
+		numHitables = 4;
+		break;
+	case 1:
+		numHitables = 58;
+		break;
+	case 2:
+		numHitables = 901;
+		break;
+	case 3:
+		numHitables = 102;
+		break;
+	case 4:
+		numHitables = 68;
+		break;
+	}
+
 	// World
 	checkCudaErrors(cudaMallocManaged(list, numHitables * sizeof(hitable*)));
 	hitable** worldPtr;
 	checkCudaErrors(cudaMallocManaged(&worldPtr, sizeof(hitable*)));
-	randomScene2 << <1, 1 >> > (*list, worldPtr);
+	switch (choice)
+	{
+	case 0:
+		simpleScene << <1, 1 >> > (*list, worldPtr);
+		break;
+	case 1:
+		simpleScene2 << <1, 1 >> > (*list, worldPtr);
+		break;
+	case 2:
+		randomScene << <1, 1 >> > (*list, worldPtr);
+		break;
+	case 3:
+		randomScene2 << <1, 1 >> > (*list, worldPtr);
+		break;
+	case 4:
+		randomScene3 << <1, 1 >> > (*list, worldPtr);
+		break;
+	}
 	checkCudaErrors(cudaGetLastError());
 	checkCudaErrors(cudaDeviceSynchronize());
 	*world = *worldPtr;
@@ -86,7 +124,6 @@ CUDA_GLOBAL void render(camera* cam, Image* image, hitable* world,
 
 	int pixelIndex = j * image->nx + i;
 
-	//printf("ir: %f, ig: %f, ib: %f\n", image->pixels[pixelIndex][0], image->pixels[pixelIndex][1], image->pixels[pixelIndex][2]);
 	for (int s = 0; s < nsBatch; ++s)
 	{
 		RandomGenerator rng(sampleCount * nsBatch + s, i * image->nx + j);
@@ -98,18 +135,29 @@ CUDA_GLOBAL void render(camera* cam, Image* image, hitable* world,
 	}
 	
 	vec3 col = image->pixels[pixelIndex] / (sampleCount * nsBatch);
-	//printf("ir: %f, ig: %f, ib: %f\n", col[0], col[1], col[2]);
+	image->pixels2[pixelIndex] = col;
+}
+#endif	// CUDA_ENABLED
+
+CUDA_GLOBAL void display(Image* image)
+{
+	int i = threadIdx.x + blockIdx.x * blockDim.x;
+	int j = threadIdx.y + blockIdx.y * blockDim.y;
+
+	int pixelIndex = j * image->nx + i;
+
+	vec3 col = image->pixels2[pixelIndex];
 	// Gamma encoding of images is used to optimize the usage of bits
 	// when encoding an image, or bandwidth used to transport an image,
 	// by taking advantage of the non-linear manner in which humans perceive
 	// light and color. (wikipedia)
-	
+
 	// we use gamma 2: raising the color to the power 1/gamma (1/2)
 	col = vec3(sqrt(col[0]), sqrt(col[1]), sqrt(col[2]));
 
-	int ir = int(255.99f * col[0]);
-	int ig = int(255.99f * col[1]);
-	int ib = int(255.99f * col[2]);
+	int ir = clamp(int(255.f * col[0]), 0, 255);
+	int ig = clamp(int(255.99f * col[1]), 0, 255);
+	int ib = clamp(int(255.99f * col[2]), 0, 255);
 
 	if (image->writeImage)
 	{
@@ -125,7 +173,6 @@ CUDA_GLOBAL void render(camera* cam, Image* image, hitable* world,
 	if (image->showWindow)
 		image->windowPixels[(image->ny - j - 1) * image->nx + i] = (ir << 16) | (ig << 8) | (ib);
 }
-#endif	// CUDA_ENABLED
 
 #ifdef CUDA_ENABLED
 void Renderer::cudaRender(uint32_t* windowPixels, camera* cam,
@@ -134,8 +181,18 @@ void Renderer::cudaRender(uint32_t* windowPixels, camera* cam,
 	dim3 blocks((image->nx + image->tx - 1) / image->tx, (image->ny + image->ty - 1) / image->ty);
 	dim3 threads(image->tx, image->ty);
 
+	// Kernel call for the computation of pixel colors.
 	render << <blocks, threads >> > (cam, image, world, this, sampleCount);
-	// std::cout << (image->nx + image->tx - 1)/image->tx;
+
+	// Denoise here.
+#ifdef OIDN_ENABLED
+	checkCudaErrors(cudaDeviceSynchronize());
+	image->denoise();
+	checkCudaErrors(cudaDeviceSynchronize());
+#endif	// OIDN_ENABLED
+	// Kernel call to fill the output buffers.
+	display << <blocks, threads >> > (image);
+
 	checkCudaErrors(cudaGetLastError());
 	checkCudaErrors(cudaDeviceSynchronize());
 }

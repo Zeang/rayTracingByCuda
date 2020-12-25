@@ -1,5 +1,6 @@
 #pragma once
 #define CUDA_ENABLED
+#define OIDN_ENABLED
 
 #ifdef CUDA_ENABLED
 	#include <cuda_runtime_api.h>
@@ -36,9 +37,11 @@
 
 const int nx = 1280;
 const int ny = 720;
-const int ns = INT_MAX;
+const int ns = 64;
+const int nsDenoise = 64;
 static int imageNr = 0;
-const int sampleNrToWrite = 2;
+const int sampleNrToWrite = 16;
+const int sampleNrToWriteDenoise = sampleNrToWrite;
 const std::string folderName = "output";
 const std::string fileName = "raytracer";
 

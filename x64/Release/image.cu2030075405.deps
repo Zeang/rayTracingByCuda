@@ -92,6 +92,10 @@ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\include\texture_types.h
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\include\vector_functions.h
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\include\vector_functions.hpp
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\include\vector_types.h
+D:\libForRayTracing\oidn-1.2.4.x64.vc14.windows\include\OpenImageDenoise\config.h
+D:\libForRayTracing\oidn-1.2.4.x64.vc14.windows\include\OpenImageDenoise\oidn.h
+D:\libForRayTracing\oidn-1.2.4.x64.vc14.windows\include\OpenImageDenoise\oidn.hpp
+D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\algorithm
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\atomic
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\cctype
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\cerrno
@@ -125,6 +129,7 @@ D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\new
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\ostream
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\sal.h
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\sstream
+D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\stdbool.h
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\stdexcept
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\stdint.h
 D:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\streambuf

@@ -67,7 +67,7 @@ void invokeRenderer(hitable* world, Window* w, Image* image, camera* cam, Render
         std::string path = "./" + folderName;
         //mode_t mode = 0733;
         int error = 0;
-#if defined(_WIN64)
+#if defined(_WIN32)
         error = _mkdir(path.c_str());
 #else
         error = mkdir(path.c_str(), mode);
@@ -75,17 +75,28 @@ void invokeRenderer(hitable* world, Window* w, Image* image, camera* cam, Render
         if (error != 0)
             std::cerr << "Couldn't create output folder." << std::endl;
     }
+    // If denoising is enabled, use the sample size for the denoising.
+#ifdef OIDN_ENABLED
+    int numberOfIterations = (nsDenoise + nsBatch - 1) / nsBatch;
+#else
+    int numberOfIterations = (ns + nsBatch - 1) / nsBatch;
+#endif  // OIDN_ENABLED
 
-    int numberOfIterations = ns;
     if (showWindow)
     {
         int j = 1;
-        for (int i = 0; i < numberOfIterations; ++i, ++j)
+        for (int i = 0; i < numberOfIterations; ++i, j += nsBatch)
         {
             w->updateImage(showWindow, writeImagePPM, writeImagePNG, ppmImageStream, w, cam, world, image, i + 1, image->fileOutputImage);
             w->pollEvents(image, image->fileOutputImage);
             
-            if (writeEveryImageToFile && (j % sampleNrToWrite == 0))
+            if (writeEveryImageToFile && 
+#ifdef OIDN_ENABLED
+            (j >= sampleNrToWriteDenoise)
+#else
+            (j >= sampleNrToWrite)
+#endif
+                )
             {
                 w->moveCamera(image, image->fileOutputImage);
                 j = 0;
@@ -98,7 +109,7 @@ void invokeRenderer(hitable* world, Window* w, Image* image, camera* cam, Render
                 currentFileName += ".png";
                 // write png
                 stbi_write_png(currentFileName.c_str(), nx, ny, 3, image->fileOutputImage, nx * 3);
-                image->resetImage();
+                
                 i = -1;
                 w->refresh = false;
             }
@@ -106,27 +117,27 @@ void invokeRenderer(hitable* world, Window* w, Image* image, camera* cam, Render
                 break;
         }
         std::cout << "Done." << std::endl;
-
-        // we write the files after the windows is closed
-        if (writeImagePPM)
-        {
-            for (int j = 0; j < ny; ++j)
-                for (int i = 0; i < nx; ++i)
-                    ppmImageStream << int(image->fileOutputImage[(j * nx + i) * 3]) << " " << int(image->fileOutputImage[(j * nx + i) * 3 + 1]) << " " << int(image->fileOutputImage[(j * nx + i) * 3 + 2]) << "\n";
-            ppmImageStream.close();
-        }
-
-        if (writeImagePNG)
-        {
-            // write png
-            stbi_write_png("test.png", nx, ny, 3, image->fileOutputImage, nx * 3);
-        }
     }
     else
     {
         for (int i = 0; i < numberOfIterations; ++i)
             render->trace_rays(nullptr, cam, world, image, i + 1, image->fileOutputImage);
         std::cout << "Done." << std::endl;
+    }
+
+    // we write the files after the windows is closed
+    if (writeImagePPM)
+    {
+        for (int j = 0; j < ny; ++j)
+            for (int i = 0; i < nx; ++i)
+                ppmImageStream << int(image->fileOutputImage[(j * nx + i) * 3]) << " " << int(image->fileOutputImage[(j * nx + i) * 3 + 1]) << " " << int(image->fileOutputImage[(j * nx + i) * 3 + 2]) << "\n";
+        ppmImageStream.close();
+    }
+
+    if (writeImagePNG)
+    {
+        // write png
+        stbi_write_png("test.png", nx, ny, 3, image->fileOutputImage, nx * 3);
     }
 }
 
@@ -164,13 +175,14 @@ int main(int argc, char** argv)
     bool runBenchmark = false;
     bool writeEveryImageToFile = true;
 
+    // Run benchmark.
     if (runBenchmark)
     {
         std::ofstream benchmarkStream;
 
         for (int i = 0; i < benchmarkCount; ++i)
         {
-            benchmarkStream.open("benchmark/benchmarkResultCUDA.txt");
+            benchmarkStream.open("benchmark/benchmarkResultCUDA.txt", std::ios_base::app);
             // Record start time
             auto start = std::chrono::high_resolution_clock::now();
 
