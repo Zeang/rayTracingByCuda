@@ -8,7 +8,7 @@
 #include "../hitables/hitable_list.h"
 #include "../materials/material.h"
 
-CUDA_DEV int numHitables = 102;
+CUDA_DEV int numHitables = 0;
 
 #ifdef CUDA_ENABLED
 void initializeWorldCuda(bool showWindow, bool writeImagePPM,
@@ -94,7 +94,7 @@ CUDA_GLOBAL void freeWorldCuda(hitable** list, hitable** world)
 			delete ((sphere*)list[i])->mat_ptr;
 			delete list[i];
 		}
-		delete* world;
+		//delete* world;
 	}
 }
 
@@ -105,7 +105,7 @@ void destroyWorldCuda(bool showWindow, hitable** list, hitable* world, Window* w
 	checkCudaErrors(cudaDeviceSynchronize());
 	// checkCudaErrors(cudaFree(list));
 	// checkCudaErrors(cudaFree(world));
-	checkCudaErrors(cudaFree(w));
+	//checkCudaErrors(cudaFree(w));
 	checkCudaErrors(cudaFree(image));
 	checkCudaErrors(cudaFree(cam));
 	checkCudaErrors(cudaFree(render));

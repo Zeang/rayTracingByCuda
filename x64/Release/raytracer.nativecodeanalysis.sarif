@@ -700,494 +700,6 @@
           "suppressions": []
         },
         {
-          "ruleId": "C6386",
-          "message": {
-            "text": "写入到“o”时缓冲区溢出: 可写大小为“8+12+13+12+zlen+12”个字节，但可能写入了“8”个字节。"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
-                },
-                "region": {
-                  "startLine": 1079,
-                  "startColumn": 4,
-                  "endLine": 1079,
-                  "endColumn": 4
-                }
-              },
-              "logicalLocations": [
-                {
-                  "decoratedName": "?stbi_write_png_to_mem@@YAPEAEPEAEHHHHPEAH@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ],
-          "codeFlows": [
-            {
-              "threadFlows": [
-                {
-                  "locations": [
-                    {
-                      "index": 0,
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
-                          },
-                          "region": {
-                            "startLine": 1023,
-                            "startColumn": 8
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "index": 1,
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
-                          },
-                          "region": {
-                            "startLine": 1024,
-                            "startColumn": 8
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "index": 2,
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
-                          },
-                          "region": {
-                            "startLine": 1025,
-                            "startColumn": 18
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "index": 3,
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
-                          },
-                          "region": {
-                            "startLine": 1026,
-                            "startColumn": 19
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "index": 4,
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
-                          },
-                          "region": {
-                            "startLine": 1026,
-                            "startColumn": 24
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "index": 5,
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
-                          },
-                          "region": {
-                            "startLine": 1026,
-                            "startColumn": 28
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "index": 6,
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
-                          },
-                          "region": {
-                            "startLine": 1026,
-                            "startColumn": 35
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "index": 7,
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
-                          },
-                          "region": {
-                            "startLine": 1027,
-                            "startColumn": 17
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "index": 8,
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
-                          },
-                          "region": {
-                            "startLine": 1028,
-                            "startColumn": 8
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "index": 9,
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
-                          },
-                          "region": {
-                            "startLine": 1028,
-                            "startColumn": 10
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "index": 10,
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
-                          },
-                          "region": {
-                            "startLine": 1030,
-                            "startColumn": 21
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "index": 11,
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
-                          },
-                          "region": {
-                            "startLine": 1033,
-                            "startColumn": 21
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "index": 12,
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
-                          },
-                          "region": {
-                            "startLine": 1037,
-                            "startColumn": 9
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "index": 13,
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
-                          },
-                          "region": {
-                            "startLine": 1037,
-                            "startColumn": 60
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "index": 14,
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
-                          },
-                          "region": {
-                            "startLine": 1038,
-                            "startColumn": 16
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "index": 15,
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
-                          },
-                          "region": {
-                            "startLine": 1038,
-                            "startColumn": 59
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "index": 16,
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
-                          },
-                          "region": {
-                            "startLine": 1039,
-                            "startColumn": 10
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "index": 17,
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
-                          },
-                          "region": {
-                            "startLine": 1039,
-                            "startColumn": 16
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "index": 18,
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
-                          },
-                          "region": {
-                            "startLine": 1068,
-                            "startColumn": 4
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "index": 19,
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
-                          },
-                          "region": {
-                            "startLine": 1069,
-                            "startColumn": 9
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "index": 20,
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
-                          },
-                          "region": {
-                            "startLine": 1070,
-                            "startColumn": 4
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "index": 21,
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
-                          },
-                          "region": {
-                            "startLine": 1071,
-                            "startColumn": 8
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "index": 22,
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
-                          },
-                          "region": {
-                            "startLine": 1074,
-                            "startColumn": 8
-                          }
-                        },
-                        "message": {
-                          "text": "“out”是一个 0 字节数组"
-                        }
-                      },
-                      "kinds": [
-                        "声明"
-                      ],
-                      "importance": "essential"
-                    },
-                    {
-                      "index": 23,
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
-                          },
-                          "region": {
-                            "startLine": 1075,
-                            "startColumn": 8
-                          }
-                        },
-                        "message": {
-                          "text": "跳过此分支(假定“!out”为 false)"
-                        }
-                      },
-                      "kinds": [
-                        "分支"
-                      ],
-                      "importance": "important"
-                    },
-                    {
-                      "index": 24,
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
-                          },
-                          "region": {
-                            "startLine": 1076,
-                            "startColumn": 13
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "index": 25,
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
-                          },
-                          "region": {
-                            "startLine": 1078,
-                            "startColumn": 5
-                          }
-                        },
-                        "message": {
-                          "text": "(别名)“o”收到“out”的值"
-                        }
-                      },
-                      "kinds": [
-                        "别名"
-                      ],
-                      "importance": "essential"
-                    },
-                    {
-                      "index": 26,
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
-                          },
-                          "region": {
-                            "startLine": 1079,
-                            "startColumn": 4
-                          }
-                        },
-                        "message": {
-                          "text": "“o”是“memmove”的输入/输出参数(在 d:\\microsoft visual studio\\2019\\community\\vc\\tools\\msvc\\14.28.29333\\include\\vcruntime_string.h:50 处声明)"
-                        }
-                      },
-                      "kinds": [
-                        "声明"
-                      ],
-                      "importance": "important"
-                    },
-                    {
-                      "index": 27,
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
-                          },
-                          "region": {
-                            "startLine": 1079,
-                            "startColumn": 4
-                          }
-                        },
-                        "message": {
-                          "text": "写入到“o”无效(位于其可写范围之外)"
-                        }
-                      },
-                      "kinds": [
-                        "使用情况"
-                      ],
-                      "importance": "essential"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "suppressions": []
-        },
-        {
           "ruleId": "C6385",
           "message": {
             "text": "从“line_buffer”中读取的数据无效: 可读大小为“x*n”个字节，但可能读取了“2”个字节。"
@@ -1817,6 +1329,494 @@
           "suppressions": []
         },
         {
+          "ruleId": "C6386",
+          "message": {
+            "text": "写入到“o”时缓冲区溢出: 可写大小为“8+12+13+12+zlen+12”个字节，但可能写入了“8”个字节。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
+                },
+                "region": {
+                  "startLine": 1079,
+                  "startColumn": 4,
+                  "endLine": 1079,
+                  "endColumn": 4
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?stbi_write_png_to_mem@@YAPEAEPEAEHHHHPEAH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "index": 0,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
+                          },
+                          "region": {
+                            "startLine": 1023,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 1,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
+                          },
+                          "region": {
+                            "startLine": 1024,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 2,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
+                          },
+                          "region": {
+                            "startLine": 1025,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 3,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
+                          },
+                          "region": {
+                            "startLine": 1026,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 4,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
+                          },
+                          "region": {
+                            "startLine": 1026,
+                            "startColumn": 24
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 5,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
+                          },
+                          "region": {
+                            "startLine": 1026,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 6,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
+                          },
+                          "region": {
+                            "startLine": 1026,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 7,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
+                          },
+                          "region": {
+                            "startLine": 1027,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 8,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
+                          },
+                          "region": {
+                            "startLine": 1028,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 9,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
+                          },
+                          "region": {
+                            "startLine": 1028,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 10,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
+                          },
+                          "region": {
+                            "startLine": 1030,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 11,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
+                          },
+                          "region": {
+                            "startLine": 1033,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 12,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
+                          },
+                          "region": {
+                            "startLine": 1037,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 13,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
+                          },
+                          "region": {
+                            "startLine": 1037,
+                            "startColumn": 60
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 14,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
+                          },
+                          "region": {
+                            "startLine": 1038,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 15,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
+                          },
+                          "region": {
+                            "startLine": 1038,
+                            "startColumn": 59
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 16,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
+                          },
+                          "region": {
+                            "startLine": 1039,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 17,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
+                          },
+                          "region": {
+                            "startLine": 1039,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 18,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
+                          },
+                          "region": {
+                            "startLine": 1068,
+                            "startColumn": 4
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 19,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
+                          },
+                          "region": {
+                            "startLine": 1069,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 20,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
+                          },
+                          "region": {
+                            "startLine": 1070,
+                            "startColumn": 4
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 21,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
+                          },
+                          "region": {
+                            "startLine": 1071,
+                            "startColumn": 8
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 22,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
+                          },
+                          "region": {
+                            "startLine": 1074,
+                            "startColumn": 8
+                          }
+                        },
+                        "message": {
+                          "text": "“out”是一个 0 字节数组"
+                        }
+                      },
+                      "kinds": [
+                        "声明"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "index": 23,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
+                          },
+                          "region": {
+                            "startLine": 1075,
+                            "startColumn": 8
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“!out”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "index": 24,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
+                          },
+                          "region": {
+                            "startLine": 1076,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 25,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
+                          },
+                          "region": {
+                            "startLine": 1078,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "(别名)“o”收到“out”的值"
+                        }
+                      },
+                      "kinds": [
+                        "别名"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "index": 26,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
+                          },
+                          "region": {
+                            "startLine": 1079,
+                            "startColumn": 4
+                          }
+                        },
+                        "message": {
+                          "text": "“o”是“memmove”的输入/输出参数(在 d:\\microsoft visual studio\\2019\\community\\vc\\tools\\msvc\\14.28.29333\\include\\vcruntime_string.h:50 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "声明"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "index": 27,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/stb_image/stb_image_write.h"
+                          },
+                          "region": {
+                            "startLine": 1079,
+                            "startColumn": 4
+                          }
+                        },
+                        "message": {
+                          "text": "写入到“o”无效(位于其可写范围之外)"
+                        }
+                      },
+                      "kinds": [
+                        "使用情况"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
           "ruleId": "C26451",
           "message": {
             "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
@@ -2161,37 +2161,6 @@
         {
           "ruleId": "C26495",
           "message": {
-            "text": "未初始化变量 sphere::radius。始终初始化成员变量(type.6)。"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/hitables/sphere.h"
-                },
-                "region": {
-                  "startLine": 8,
-                  "startColumn": 11,
-                  "endLine": 8,
-                  "endColumn": 11
-                }
-              },
-              "logicalLocations": [
-                {
-                  "decoratedName": "??0sphere@@QEAA@XZ",
-                  "kind": "function"
-                }
-              ]
-            }
-          ],
-          "suppressions": [],
-          "properties": {
-            "targetSymbol": "sphere::radius"
-          }
-        },
-        {
-          "ruleId": "C26495",
-          "message": {
             "text": "未初始化变量 sphere::mat_ptr。始终初始化成员变量(type.6)。"
           },
           "locations": [
@@ -2218,6 +2187,37 @@
           "suppressions": [],
           "properties": {
             "targetSymbol": "sphere::mat_ptr"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 sphere::radius。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/hitables/sphere.h"
+                },
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 11,
+                  "endLine": 8,
+                  "endColumn": 11
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0sphere@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "sphere::radius"
           }
         },
         {
@@ -2471,37 +2471,6 @@
         {
           "ruleId": "C26495",
           "message": {
-            "text": "未初始化变量 camera::focusDist。始终初始化成员变量(type.6)。"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/util/camera.h"
-                },
-                "region": {
-                  "startLine": 39,
-                  "startColumn": 18,
-                  "endLine": 39,
-                  "endColumn": 18
-                }
-              },
-              "logicalLocations": [
-                {
-                  "decoratedName": "??0camera@@QEAA@XZ",
-                  "kind": "function"
-                }
-              ]
-            }
-          ],
-          "suppressions": [],
-          "properties": {
-            "targetSymbol": "camera::focusDist"
-          }
-        },
-        {
-          "ruleId": "C26495",
-          "message": {
             "text": "未初始化变量 camera::halfHeight。始终初始化成员变量(type.6)。"
           },
           "locations": [
@@ -2528,99 +2497,6 @@
           "suppressions": [],
           "properties": {
             "targetSymbol": "camera::halfHeight"
-          }
-        },
-        {
-          "ruleId": "C26495",
-          "message": {
-            "text": "未初始化变量 camera::halfWidth。始终初始化成员变量(type.6)。"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/util/camera.h"
-                },
-                "region": {
-                  "startLine": 39,
-                  "startColumn": 18,
-                  "endLine": 39,
-                  "endColumn": 18
-                }
-              },
-              "logicalLocations": [
-                {
-                  "decoratedName": "??0camera@@QEAA@XZ",
-                  "kind": "function"
-                }
-              ]
-            }
-          ],
-          "suppressions": [],
-          "properties": {
-            "targetSymbol": "camera::halfWidth"
-          }
-        },
-        {
-          "ruleId": "C26495",
-          "message": {
-            "text": "未初始化变量 camera::aperture。始终初始化成员变量(type.6)。"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/util/camera.h"
-                },
-                "region": {
-                  "startLine": 39,
-                  "startColumn": 18,
-                  "endLine": 39,
-                  "endColumn": 18
-                }
-              },
-              "logicalLocations": [
-                {
-                  "decoratedName": "??0camera@@QEAA@XZ",
-                  "kind": "function"
-                }
-              ]
-            }
-          ],
-          "suppressions": [],
-          "properties": {
-            "targetSymbol": "camera::aperture"
-          }
-        },
-        {
-          "ruleId": "C26495",
-          "message": {
-            "text": "未初始化变量 camera::aspect。始终初始化成员变量(type.6)。"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/util/camera.h"
-                },
-                "region": {
-                  "startLine": 39,
-                  "startColumn": 18,
-                  "endLine": 39,
-                  "endColumn": 18
-                }
-              },
-              "logicalLocations": [
-                {
-                  "decoratedName": "??0camera@@QEAA@XZ",
-                  "kind": "function"
-                }
-              ]
-            }
-          ],
-          "suppressions": [],
-          "properties": {
-            "targetSymbol": "camera::aspect"
           }
         },
         {
@@ -2688,7 +2564,131 @@
         {
           "ruleId": "C26495",
           "message": {
+            "text": "未初始化变量 camera::aspect。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/util/camera.h"
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 18,
+                  "endLine": 39,
+                  "endColumn": 18
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0camera@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "camera::aspect"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 camera::aperture。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/util/camera.h"
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 18,
+                  "endLine": 39,
+                  "endColumn": 18
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0camera@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "camera::aperture"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
             "text": "未初始化变量 camera::focusDist。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/util/camera.h"
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 18,
+                  "endLine": 39,
+                  "endColumn": 18
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0camera@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "camera::focusDist"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 camera::halfWidth。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/util/camera.h"
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 18,
+                  "endLine": 39,
+                  "endColumn": 18
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0camera@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "camera::halfWidth"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 camera::lensRadius。始终初始化成员变量(type.6)。"
           },
           "locations": [
             {
@@ -2713,7 +2713,7 @@
           ],
           "suppressions": [],
           "properties": {
-            "targetSymbol": "camera::focusDist"
+            "targetSymbol": "camera::lensRadius"
           }
         },
         {
@@ -2750,7 +2750,7 @@
         {
           "ruleId": "C26495",
           "message": {
-            "text": "未初始化变量 camera::lensRadius。始终初始化成员变量(type.6)。"
+            "text": "未初始化变量 camera::focusDist。始终初始化成员变量(type.6)。"
           },
           "locations": [
             {
@@ -2775,7 +2775,7 @@
           ],
           "suppressions": [],
           "properties": {
-            "targetSymbol": "camera::lensRadius"
+            "targetSymbol": "camera::focusDist"
           }
         },
         {
@@ -2807,6 +2807,174 @@
           "suppressions": []
         },
         {
+          "ruleId": "C26439",
+          "message": {
+            "text": "可能不会 throw 此类型的函数。将其声明为 \"noexcept\" (f.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/libForRayTracing/oidn-1.2.4.x64.vc14.windows/include/OpenImageDenoise/oidn.hpp"
+                },
+                "region": {
+                  "startLine": 52,
+                  "startColumn": 5,
+                  "endLine": 52,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0BufferRef@oidn@@QEAA@$$QEAV01@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26439",
+          "message": {
+            "text": "可能不会 throw 此类型的函数。将其声明为 \"noexcept\" (f.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/libForRayTracing/oidn-1.2.4.x64.vc14.windows/include/OpenImageDenoise/oidn.hpp"
+                },
+                "region": {
+                  "startLine": 70,
+                  "startColumn": 16,
+                  "endLine": 70,
+                  "endColumn": 16
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??4BufferRef@oidn@@QEAAAEAV01@$$QEAV01@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26439",
+          "message": {
+            "text": "可能不会 throw 此类型的函数。将其声明为 \"noexcept\" (f.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/libForRayTracing/oidn-1.2.4.x64.vc14.windows/include/OpenImageDenoise/oidn.hpp"
+                },
+                "region": {
+                  "startLine": 140,
+                  "startColumn": 5,
+                  "endLine": 140,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0FilterRef@oidn@@QEAA@$$QEAV01@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26439",
+          "message": {
+            "text": "可能不会 throw 此类型的函数。将其声明为 \"noexcept\" (f.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/libForRayTracing/oidn-1.2.4.x64.vc14.windows/include/OpenImageDenoise/oidn.hpp"
+                },
+                "region": {
+                  "startLine": 158,
+                  "startColumn": 16,
+                  "endLine": 158,
+                  "endColumn": 16
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??4FilterRef@oidn@@QEAAAEAV01@$$QEAV01@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26439",
+          "message": {
+            "text": "可能不会 throw 此类型的函数。将其声明为 \"noexcept\" (f.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/libForRayTracing/oidn-1.2.4.x64.vc14.windows/include/OpenImageDenoise/oidn.hpp"
+                },
+                "region": {
+                  "startLine": 331,
+                  "startColumn": 5,
+                  "endLine": 331,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0DeviceRef@oidn@@QEAA@$$QEAV01@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26439",
+          "message": {
+            "text": "可能不会 throw 此类型的函数。将其声明为 \"noexcept\" (f.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/libForRayTracing/oidn-1.2.4.x64.vc14.windows/include/OpenImageDenoise/oidn.hpp"
+                },
+                "region": {
+                  "startLine": 349,
+                  "startColumn": 16,
+                  "endLine": 349,
+                  "endColumn": 16
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??4DeviceRef@oidn@@QEAAAEAV01@$$QEAV01@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
           "ruleId": "C26451",
           "message": {
             "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
@@ -2818,15 +2986,71 @@
                   "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/util/image.h"
                 },
                 "region": {
-                  "startLine": 30,
+                  "startLine": 40,
                   "startColumn": 43,
-                  "endLine": 30,
+                  "endLine": 40,
                   "endColumn": 47
                 }
               },
               "logicalLocations": [
                 {
                   "decoratedName": "??0Image@@QEAA@_N0HHHH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/util/image.h"
+                },
+                "region": {
+                  "startLine": 106,
+                  "startColumn": 34,
+                  "endLine": 106,
+                  "endColumn": 44
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?SavePfm@Image@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/util/image.h"
+                },
+                "region": {
+                  "startLine": 106,
+                  "startColumn": 34,
+                  "endLine": 106,
+                  "endColumn": 39
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?SavePfm@Image@@QEAAXXZ",
                   "kind": "function"
                 }
               ]
@@ -3038,7 +3262,7 @@
       },
       "invocations": [
         {
-          "commandLine": "\"D:\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\HostX86\\x64\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x0018B1D0 -il C:\\Users\\A\\AppData\\Local\\Temp\\_CL_a9cdaf87ast -typedil -f raytracer.cpp -Ze -D_MSC_EXTENSIONS -Zp16 -pc \\:/ -D_MSC_VER=1928 -D_MSC_FULL_VER=192829333 -D_MSC_BUILD=0 -D_M_AMD64=100 -ZILP448 -D_M_X64=100 -D_WIN64 -D_WIN32 -GR -D_CPPRTTI -I D:\\libForRayTracing\\SDL2\\include -I C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.1\\include -nologo -W 3 -diagnostics:column -GF -Og -Ot -Oy -Oi -ltcg -DCODE_ANALYSIS -DNDEBUG -D_CONSOLE -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -MD -D_MT -D_DLL -GS -D_M_FP_PRECISE -permissive- -Zc:wchar_t -Zc:forScope -Fox64\\Release\\raytracer.obj -Fdx64\\Release\\vc142.pdb -Gd -analyze:projectdirectory D:\\Microsoft Visual Studio\\Projects\\RayTracingByCuda -analyze:rulesetdirectory ;D:\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset D:\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin D:\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I D:\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\include -I D:\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\atlmfc\\include -I D:\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um",
+          "commandLine": "\"D:\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\HostX86\\x64\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x0018B1D0 -il C:\\Users\\A\\AppData\\Local\\Temp\\_CL_565278fcast -typedil -f raytracer.cpp -Ze -D_MSC_EXTENSIONS -Zp16 -pc \\:/ -D_MSC_VER=1928 -D_MSC_FULL_VER=192829333 -D_MSC_BUILD=0 -D_M_AMD64=100 -ZILP448 -D_M_X64=100 -D_WIN64 -D_WIN32 -GR -D_CPPRTTI -I D:\\libForRayTracing\\SDL2\\include -I D:\\libForRayTracing\\oidn-1.2.4.x64.vc14.windows\\include -I C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.1\\include -nologo -W 3 -diagnostics:column -GF -Og -Ot -Oy -Oi -ltcg -DCODE_ANALYSIS -DNDEBUG -D_CONSOLE -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -MD -D_MT -D_DLL -GS -D_M_FP_PRECISE -permissive- -Zc:wchar_t -Zc:forScope -Fox64\\Release\\raytracer.obj -Fdx64\\Release\\vc142.pdb -Gd -analyze:projectdirectory D:\\Microsoft Visual Studio\\Projects\\RayTracingByCuda -analyze:rulesetdirectory ;D:\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset D:\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin D:\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I D:\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\include -I D:\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\atlmfc\\include -I D:\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um",
           "executionSuccessful": true
         }
       ],
@@ -3349,6 +3573,14 @@
         },
         {
           "location": {
+            "uri": "file:///D:/libForRayTracing/oidn-1.2.4.x64.vc14.windows/include/OpenImageDenoise/oidn.hpp"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
             "uri": "file:///D:/Microsoft Visual Studio/Projects/RayTracingByCuda/util/image.h"
           },
           "roles": [
@@ -3406,6 +3638,22 @@
         {
           "location": {
             "uri": "file:///d:/microsoft visual studio/projects/raytracingbycuda/util/randomgenerator.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///d:/libforraytracing/oidn-1.2.4.x64.vc14.windows/include/openimagedenoise/oidn.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///d:/libforraytracing/oidn-1.2.4.x64.vc14.windows/include/openimagedenoise/config.h"
           },
           "roles": [
             "responseFile"

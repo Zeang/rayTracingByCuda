@@ -85,7 +85,7 @@ void invokeRenderer(hitable* world, Window* w, Image* image, camera* cam, Render
     if (showWindow)
     {
         int j = 1;
-        for (int i = 0; i < numberOfIterations; ++i, j += nsBatch)
+        for (int i = 0; ; ++i, j += nsBatch)
         {
             w->updateImage(showWindow, writeImagePPM, writeImagePNG, ppmImageStream, w, cam, world, image, i + 1, image->fileOutputImage);
             w->pollEvents(image, image->fileOutputImage);

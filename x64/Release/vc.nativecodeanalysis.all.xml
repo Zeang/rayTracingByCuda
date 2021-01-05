@@ -335,223 +335,6 @@
     <SFA>
       <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
       <FILENAME>stb_image_write.h</FILENAME>
-      <LINE>1079</LINE>
-      <COLUMN>3</COLUMN>
-    </SFA>
-    <DEFECTCODE>6386</DEFECTCODE>
-    <DESCRIPTION>写入到“o”时缓冲区溢出: 可写大小为“8+12+13+12+zlen+12”个字节，但可能写入了“8”个字节。</DESCRIPTION>
-    <FUNCTION>stbi_write_png_to_mem</FUNCTION>
-    <DECORATED>?stbi_write_png_to_mem@@YAPEAEPEAEHHHHPEAH@Z</DECORATED>
-    <FUNCLINE>1021</FUNCLINE>
-    <PROBABILITY>1</PROBABILITY>
-    <RANK>4</RANK>
-    <CATEGORY>
-      <RULECATEGORY>mspft</RULECATEGORY>
-    </CATEGORY>
-    <PATH>
-      <SFA>
-        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
-        <FILENAME>stb_image_write.h</FILENAME>
-        <LINE>1023</LINE>
-        <COLUMN>7</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
-        <FILENAME>stb_image_write.h</FILENAME>
-        <LINE>1024</LINE>
-        <COLUMN>7</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
-        <FILENAME>stb_image_write.h</FILENAME>
-        <LINE>1025</LINE>
-        <COLUMN>17</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
-        <FILENAME>stb_image_write.h</FILENAME>
-        <LINE>1026</LINE>
-        <COLUMN>18</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
-        <FILENAME>stb_image_write.h</FILENAME>
-        <LINE>1026</LINE>
-        <COLUMN>23</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
-        <FILENAME>stb_image_write.h</FILENAME>
-        <LINE>1026</LINE>
-        <COLUMN>27</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
-        <FILENAME>stb_image_write.h</FILENAME>
-        <LINE>1026</LINE>
-        <COLUMN>34</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
-        <FILENAME>stb_image_write.h</FILENAME>
-        <LINE>1027</LINE>
-        <COLUMN>16</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
-        <FILENAME>stb_image_write.h</FILENAME>
-        <LINE>1028</LINE>
-        <COLUMN>7</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
-        <FILENAME>stb_image_write.h</FILENAME>
-        <LINE>1028</LINE>
-        <COLUMN>9</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
-        <FILENAME>stb_image_write.h</FILENAME>
-        <LINE>1030</LINE>
-        <COLUMN>20</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
-        <FILENAME>stb_image_write.h</FILENAME>
-        <LINE>1033</LINE>
-        <COLUMN>20</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
-        <FILENAME>stb_image_write.h</FILENAME>
-        <LINE>1037</LINE>
-        <COLUMN>8</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
-        <FILENAME>stb_image_write.h</FILENAME>
-        <LINE>1037</LINE>
-        <COLUMN>59</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
-        <FILENAME>stb_image_write.h</FILENAME>
-        <LINE>1038</LINE>
-        <COLUMN>15</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
-        <FILENAME>stb_image_write.h</FILENAME>
-        <LINE>1038</LINE>
-        <COLUMN>58</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
-        <FILENAME>stb_image_write.h</FILENAME>
-        <LINE>1039</LINE>
-        <COLUMN>9</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
-        <FILENAME>stb_image_write.h</FILENAME>
-        <LINE>1039</LINE>
-        <COLUMN>15</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
-        <FILENAME>stb_image_write.h</FILENAME>
-        <LINE>1068</LINE>
-        <COLUMN>3</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
-        <FILENAME>stb_image_write.h</FILENAME>
-        <LINE>1069</LINE>
-        <COLUMN>8</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
-        <FILENAME>stb_image_write.h</FILENAME>
-        <LINE>1070</LINE>
-        <COLUMN>3</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
-        <FILENAME>stb_image_write.h</FILENAME>
-        <LINE>1071</LINE>
-        <COLUMN>7</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
-        <FILENAME>stb_image_write.h</FILENAME>
-        <LINE>1074</LINE>
-        <COLUMN>7</COLUMN>
-        <KEYEVENT>
-          <ID>1</ID>
-          <KIND>声明</KIND>
-          <IMPORTANCE>Essential</IMPORTANCE>
-          <MESSAGE>“out”是一个 0 字节数组</MESSAGE>
-        </KEYEVENT>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
-        <FILENAME>stb_image_write.h</FILENAME>
-        <LINE>1075</LINE>
-        <COLUMN>7</COLUMN>
-        <KEYEVENT>
-          <ID>2</ID>
-          <KIND>分支</KIND>
-          <IMPORTANCE>Full</IMPORTANCE>
-          <MESSAGE>跳过此分支(假定“!out”为 false)</MESSAGE>
-        </KEYEVENT>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
-        <FILENAME>stb_image_write.h</FILENAME>
-        <LINE>1076</LINE>
-        <COLUMN>12</COLUMN>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
-        <FILENAME>stb_image_write.h</FILENAME>
-        <LINE>1078</LINE>
-        <COLUMN>4</COLUMN>
-        <KEYEVENT>
-          <ID>3</ID>
-          <KIND>别名</KIND>
-          <IMPORTANCE>Essential</IMPORTANCE>
-          <MESSAGE>(别名)“o”收到“out”的值</MESSAGE>
-        </KEYEVENT>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
-        <FILENAME>stb_image_write.h</FILENAME>
-        <LINE>1079</LINE>
-        <COLUMN>3</COLUMN>
-        <KEYEVENT>
-          <ID>4</ID>
-          <KIND>声明</KIND>
-          <IMPORTANCE>Full</IMPORTANCE>
-          <MESSAGE>“o”是“memmove”的输入/输出参数(在 d:\microsoft visual studio\2019\community\vc\tools\msvc\14.28.29333\include\vcruntime_string.h:50 处声明)</MESSAGE>
-        </KEYEVENT>
-      </SFA>
-      <SFA>
-        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
-        <FILENAME>stb_image_write.h</FILENAME>
-        <LINE>1079</LINE>
-        <COLUMN>3</COLUMN>
-        <KEYEVENT>
-          <ID>5</ID>
-          <KIND>使用情况</KIND>
-          <IMPORTANCE>Essential</IMPORTANCE>
-          <MESSAGE>写入到“o”无效(位于其可写范围之外)</MESSAGE>
-        </KEYEVENT>
-      </SFA>
-    </PATH>
-  </DEFECT><DEFECT>
-    <SFA>
-      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
-      <FILENAME>stb_image_write.h</FILENAME>
       <LINE>1052</LINE>
       <COLUMN>19</COLUMN>
     </SFA>
@@ -847,6 +630,223 @@
     <SFA>
       <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
       <FILENAME>stb_image_write.h</FILENAME>
+      <LINE>1079</LINE>
+      <COLUMN>3</COLUMN>
+    </SFA>
+    <DEFECTCODE>6386</DEFECTCODE>
+    <DESCRIPTION>写入到“o”时缓冲区溢出: 可写大小为“8+12+13+12+zlen+12”个字节，但可能写入了“8”个字节。</DESCRIPTION>
+    <FUNCTION>stbi_write_png_to_mem</FUNCTION>
+    <DECORATED>?stbi_write_png_to_mem@@YAPEAEPEAEHHHHPEAH@Z</DECORATED>
+    <FUNCLINE>1021</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
+        <FILENAME>stb_image_write.h</FILENAME>
+        <LINE>1023</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
+        <FILENAME>stb_image_write.h</FILENAME>
+        <LINE>1024</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
+        <FILENAME>stb_image_write.h</FILENAME>
+        <LINE>1025</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
+        <FILENAME>stb_image_write.h</FILENAME>
+        <LINE>1026</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
+        <FILENAME>stb_image_write.h</FILENAME>
+        <LINE>1026</LINE>
+        <COLUMN>23</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
+        <FILENAME>stb_image_write.h</FILENAME>
+        <LINE>1026</LINE>
+        <COLUMN>27</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
+        <FILENAME>stb_image_write.h</FILENAME>
+        <LINE>1026</LINE>
+        <COLUMN>34</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
+        <FILENAME>stb_image_write.h</FILENAME>
+        <LINE>1027</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
+        <FILENAME>stb_image_write.h</FILENAME>
+        <LINE>1028</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
+        <FILENAME>stb_image_write.h</FILENAME>
+        <LINE>1028</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
+        <FILENAME>stb_image_write.h</FILENAME>
+        <LINE>1030</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
+        <FILENAME>stb_image_write.h</FILENAME>
+        <LINE>1033</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
+        <FILENAME>stb_image_write.h</FILENAME>
+        <LINE>1037</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
+        <FILENAME>stb_image_write.h</FILENAME>
+        <LINE>1037</LINE>
+        <COLUMN>59</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
+        <FILENAME>stb_image_write.h</FILENAME>
+        <LINE>1038</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
+        <FILENAME>stb_image_write.h</FILENAME>
+        <LINE>1038</LINE>
+        <COLUMN>58</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
+        <FILENAME>stb_image_write.h</FILENAME>
+        <LINE>1039</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
+        <FILENAME>stb_image_write.h</FILENAME>
+        <LINE>1039</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
+        <FILENAME>stb_image_write.h</FILENAME>
+        <LINE>1068</LINE>
+        <COLUMN>3</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
+        <FILENAME>stb_image_write.h</FILENAME>
+        <LINE>1069</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
+        <FILENAME>stb_image_write.h</FILENAME>
+        <LINE>1070</LINE>
+        <COLUMN>3</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
+        <FILENAME>stb_image_write.h</FILENAME>
+        <LINE>1071</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
+        <FILENAME>stb_image_write.h</FILENAME>
+        <LINE>1074</LINE>
+        <COLUMN>7</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>声明</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>“out”是一个 0 字节数组</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
+        <FILENAME>stb_image_write.h</FILENAME>
+        <LINE>1075</LINE>
+        <COLUMN>7</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>跳过此分支(假定“!out”为 false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
+        <FILENAME>stb_image_write.h</FILENAME>
+        <LINE>1076</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
+        <FILENAME>stb_image_write.h</FILENAME>
+        <LINE>1078</LINE>
+        <COLUMN>4</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>别名</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>(别名)“o”收到“out”的值</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
+        <FILENAME>stb_image_write.h</FILENAME>
+        <LINE>1079</LINE>
+        <COLUMN>3</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>声明</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>“o”是“memmove”的输入/输出参数(在 d:\microsoft visual studio\2019\community\vc\tools\msvc\14.28.29333\include\vcruntime_string.h:50 处声明)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
+        <FILENAME>stb_image_write.h</FILENAME>
+        <LINE>1079</LINE>
+        <COLUMN>3</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>使用情况</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>写入到“o”无效(位于其可写范围之外)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\stb_image\</FILEPATH>
+      <FILENAME>stb_image_write.h</FILENAME>
       <LINE>1037</LINE>
       <COLUMN>28</COLUMN>
     </SFA>
@@ -961,12 +961,12 @@
       <COLUMN>10</COLUMN>
     </SFA>
     <DEFECTCODE>26495</DEFECTCODE>
-    <DESCRIPTION>未初始化变量 sphere::radius。始终初始化成员变量(type.6)。</DESCRIPTION>
+    <DESCRIPTION>未初始化变量 sphere::mat_ptr。始终初始化成员变量(type.6)。</DESCRIPTION>
     <FUNCTION>sphere::{ctor}</FUNCTION>
     <DECORATED>??0sphere@@QEAA@XZ</DECORATED>
     <FUNCLINE>8</FUNCLINE>
     <ADDITIONALINFO>
-      <targetSymbol>sphere::radius</targetSymbol>
+      <targetSymbol>sphere::mat_ptr</targetSymbol>
     </ADDITIONALINFO>
     <PATH></PATH>
   </DEFECT><DEFECT>
@@ -1025,12 +1025,12 @@
       <COLUMN>17</COLUMN>
     </SFA>
     <DEFECTCODE>26495</DEFECTCODE>
-    <DESCRIPTION>未初始化变量 camera::focusDist。始终初始化成员变量(type.6)。</DESCRIPTION>
+    <DESCRIPTION>未初始化变量 camera::halfHeight。始终初始化成员变量(type.6)。</DESCRIPTION>
     <FUNCTION>camera::{ctor}</FUNCTION>
     <DECORATED>??0camera@@QEAA@XZ</DECORATED>
     <FUNCLINE>39</FUNCLINE>
     <ADDITIONALINFO>
-      <targetSymbol>camera::focusDist</targetSymbol>
+      <targetSymbol>camera::halfHeight</targetSymbol>
     </ADDITIONALINFO>
     <PATH></PATH>
   </DEFECT><DEFECT>
@@ -1041,12 +1041,12 @@
       <COLUMN>17</COLUMN>
     </SFA>
     <DEFECTCODE>26495</DEFECTCODE>
-    <DESCRIPTION>未初始化变量 camera::focusDist。始终初始化成员变量(type.6)。</DESCRIPTION>
+    <DESCRIPTION>未初始化变量 camera::lensRadius。始终初始化成员变量(type.6)。</DESCRIPTION>
     <FUNCTION>camera::{ctor}</FUNCTION>
     <DECORATED>??0camera@@QEAA@Vvec3@@00MM@Z</DECORATED>
     <FUNCLINE>45</FUNCLINE>
     <ADDITIONALINFO>
-      <targetSymbol>camera::focusDist</targetSymbol>
+      <targetSymbol>camera::lensRadius</targetSymbol>
     </ADDITIONALINFO>
     <PATH></PATH>
   </DEFECT><DEFECT>
@@ -1064,16 +1064,120 @@
     <PATH></PATH>
   </DEFECT><DEFECT>
     <SFA>
+      <FILEPATH>D:\libForRayTracing\oidn-1.2.4.x64.vc14.windows\include\OpenImageDenoise\</FILEPATH>
+      <FILENAME>oidn.hpp</FILENAME>
+      <LINE>52</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>可能不会 throw 此类型的函数。将其声明为 "noexcept" (f.6)。</DESCRIPTION>
+    <FUNCTION>oidn::BufferRef::{ctor}</FUNCTION>
+    <DECORATED>??0BufferRef@oidn@@QEAA@$$QEAV01@@Z</DECORATED>
+    <FUNCLINE>52</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>D:\libForRayTracing\oidn-1.2.4.x64.vc14.windows\include\OpenImageDenoise\</FILEPATH>
+      <FILENAME>oidn.hpp</FILENAME>
+      <LINE>70</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>可能不会 throw 此类型的函数。将其声明为 "noexcept" (f.6)。</DESCRIPTION>
+    <FUNCTION>oidn::BufferRef::=</FUNCTION>
+    <DECORATED>??4BufferRef@oidn@@QEAAAEAV01@$$QEAV01@@Z</DECORATED>
+    <FUNCLINE>70</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>D:\libForRayTracing\oidn-1.2.4.x64.vc14.windows\include\OpenImageDenoise\</FILEPATH>
+      <FILENAME>oidn.hpp</FILENAME>
+      <LINE>140</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>可能不会 throw 此类型的函数。将其声明为 "noexcept" (f.6)。</DESCRIPTION>
+    <FUNCTION>oidn::FilterRef::{ctor}</FUNCTION>
+    <DECORATED>??0FilterRef@oidn@@QEAA@$$QEAV01@@Z</DECORATED>
+    <FUNCLINE>140</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>D:\libForRayTracing\oidn-1.2.4.x64.vc14.windows\include\OpenImageDenoise\</FILEPATH>
+      <FILENAME>oidn.hpp</FILENAME>
+      <LINE>158</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>可能不会 throw 此类型的函数。将其声明为 "noexcept" (f.6)。</DESCRIPTION>
+    <FUNCTION>oidn::FilterRef::=</FUNCTION>
+    <DECORATED>??4FilterRef@oidn@@QEAAAEAV01@$$QEAV01@@Z</DECORATED>
+    <FUNCLINE>158</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>D:\libForRayTracing\oidn-1.2.4.x64.vc14.windows\include\OpenImageDenoise\</FILEPATH>
+      <FILENAME>oidn.hpp</FILENAME>
+      <LINE>331</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>可能不会 throw 此类型的函数。将其声明为 "noexcept" (f.6)。</DESCRIPTION>
+    <FUNCTION>oidn::DeviceRef::{ctor}</FUNCTION>
+    <DECORATED>??0DeviceRef@oidn@@QEAA@$$QEAV01@@Z</DECORATED>
+    <FUNCLINE>331</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>D:\libForRayTracing\oidn-1.2.4.x64.vc14.windows\include\OpenImageDenoise\</FILEPATH>
+      <FILENAME>oidn.hpp</FILENAME>
+      <LINE>349</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>可能不会 throw 此类型的函数。将其声明为 "noexcept" (f.6)。</DESCRIPTION>
+    <FUNCTION>oidn::DeviceRef::=</FUNCTION>
+    <DECORATED>??4DeviceRef@oidn@@QEAAAEAV01@$$QEAV01@@Z</DECORATED>
+    <FUNCLINE>349</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
       <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\util\</FILEPATH>
       <FILENAME>image.h</FILENAME>
-      <LINE>30</LINE>
+      <LINE>40</LINE>
       <COLUMN>44</COLUMN>
     </SFA>
     <DEFECTCODE>26451</DEFECTCODE>
     <DESCRIPTION>算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。</DESCRIPTION>
     <FUNCTION>Image::{ctor}</FUNCTION>
     <DECORATED>??0Image@@QEAA@_N0HHHH@Z</DECORATED>
-    <FUNCLINE>24</FUNCLINE>
+    <FUNCLINE>34</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\util\</FILEPATH>
+      <FILENAME>image.h</FILENAME>
+      <LINE>106</LINE>
+      <COLUMN>41</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。</DESCRIPTION>
+    <FUNCTION>Image::SavePfm</FUNCTION>
+    <DECORATED>?SavePfm@Image@@QEAAXXZ</DECORATED>
+    <FUNCLINE>102</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>D:\Microsoft Visual Studio\Projects\RayTracingByCuda\util\</FILEPATH>
+      <FILENAME>image.h</FILENAME>
+      <LINE>106</LINE>
+      <COLUMN>36</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。</DESCRIPTION>
+    <FUNCTION>Image::SavePfm</FUNCTION>
+    <DECORATED>?SavePfm@Image@@QEAAXXZ</DECORATED>
+    <FUNCLINE>102</FUNCLINE>
     <PATH></PATH>
   </DEFECT><DEFECT>
     <SFA>
