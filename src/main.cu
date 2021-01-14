@@ -1,32 +1,19 @@
 #include "cuda_runtime.h"
 #include "device_launch_parameters.h"
-#include <curand_kernel.h>
 #include <thrust/version.h>
 #include <iostream>
 #include <fstream>
-#include <math.h>
 #include <time.h>
-#include "../headers/vec3.h"
-#include "../headers/ray.h"
-#include "../headers/hitable_list.h"
-#include "../headers/sphere.h"
-#include "../headers/camera.h"
-#include "../headers/random.h"
-#include "../headers/material.h"
-#include "../headers/bvh.h"
+#include "../util/ray.h"
+#include "../util/camera.h"
+#include "../util/random.h"
+#include "../util/util.h"
+#include "../hitables/hitable_list.h"
+#include "../hitables/sphere.h"
+#include "../hitables/bvh.h"
+#include "../materials/material.h"
 
 using namespace std;
-
-#define checkCudaErrors(val) check_cuda((val), #val, __FILE__, __LINE__)
-void check_cuda(cudaError_t result, char const* const func, const char* const file, int const line) {
-    if (result) {
-        std::cerr << "CUDA error = " << static_cast<unsigned int>(result) << " at " <<
-            file << ":" << line << " '" << func << "' \n";
-        // Make sure we call CUDA Device Reset before exiting
-        cudaDeviceReset();
-        exit(99);
-    }
-}
 
 __device__ vec3 color(const ray& r, hitable** world, curandState* local_rand_state) {
     ray cur_ray = r;
@@ -117,9 +104,9 @@ __global__ void create_world(hitable** d_list, hitable** d_world, camera** d_cam
         d_list[i++] = new sphere(vec3(-4, 1, 0), 1.0, new lambertian(vec3(0.4, 0.2, 0.1)));
         d_list[i++] = new sphere(vec3(4, 1, 0), 1.0, new metal(vec3(0.7, 0.6, 0.5), 0.0));
         /**rand_state = local_rand_state;*/
-        //*d_world = new hitable_list(d_list, 22 * 22 + 1 + 3);
+        *d_world = new hitable_list(d_list, 22 * 22 + 1 + 3);
         printf("debug1\n");
-        *d_world = new bvh_node(d_list, 22 * 22 + 1 + 3, 0.0, 1.0, rand_state);
+        //*d_world = new bvh_node(d_list, 22 * 22 + 1 + 3, 0.0, 1.0, rand_state);
         printf("debug2\n");
 
         vec3 lookfrom(13, 2, 3);
@@ -132,9 +119,8 @@ __global__ void create_world(hitable** d_list, hitable** d_world, camera** d_cam
             30.0,
             float(nx) / float(ny),
             aperture,
-            dist_to_focus,
-            0.0f,
-            1.0f);
+            dist_to_focus
+        );
     }
 }
 
@@ -154,7 +140,7 @@ int main(void)
     int ns = 100;
     int tx = 8, ty = 8;
     ofstream outfile;
-    outfile.open("pic/rayTracingMotionBlurWithBvh.ppm");
+    outfile.open("pic/rayTracingMotionBlur2.ppm");
     outfile << "P3\n" << nx << " " << ny << "\n255\n";
 
     int num_pixels = nx * ny;
