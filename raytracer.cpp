@@ -29,6 +29,7 @@
 
 #include <sys/types.h>
 #include <sys/stat.h>
+#include <chrono>
 
 #ifdef CUDA_ENABLED
 void initializeWorldCuda(bool showWindow, bool writeImagePPM, bool writeImagePNG, hitable*** list, hitable** world, Window** w, Image** image, camera** cam, Renderer** render);
@@ -87,9 +88,19 @@ void invokeRenderer(hitable* world, Window* w, Image* image, camera* cam, Render
         int j = 1;
         for (int i = 0; ; ++i, j += nsBatch)
         {
+#ifdef CUDA_DEBUG
+            auto start = std::chrono::system_clock::now();
             w->updateImage(showWindow, writeImagePPM, writeImagePNG, ppmImageStream, w, cam, world, image, i + 1, image->fileOutputImage);
+            auto end = std::chrono::system_clock::now();
+            auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+            std::cout << "updateImage cost\t" << double(duration.count()) * std::chrono::microseconds::period::num / std::chrono::microseconds::period::den << " s" << std::endl;
+            std::cout << std::endl;
+#else
+            w->updateImage(showWindow, writeImagePPM, writeImagePNG, ppmImageStream, w, cam, world, image, i + 1, image->fileOutputImage);
+#endif
+
             w->pollEvents(image, image->fileOutputImage);
-            
+
             if (writeEveryImageToFile && 
 #ifdef OIDN_ENABLED
             (j >= sampleNrToWriteDenoise)
@@ -169,7 +180,7 @@ void raytrace(bool showWindow, bool writeImagePPM, bool writeImagePNG, bool writ
 
 int main(int argc, char** argv)
 {
-    bool writeImagePPM = true;
+    bool writeImagePPM = false;
     bool writeImagePNG = true;
     bool showWindow = true;
     bool runBenchmark = false;

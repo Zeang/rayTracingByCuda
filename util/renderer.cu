@@ -181,19 +181,49 @@ void Renderer::cudaRender(uint32_t* windowPixels, camera* cam,
 	dim3 blocks((image->nx + image->tx - 1) / image->tx, (image->ny + image->ty - 1) / image->ty);
 	dim3 threads(image->tx, image->ty);
 
-	// Kernel call for the computation of pixel colors.
+#ifdef CUDA_DEBUG
+	static int numberCount = 0;
+	auto start = std::chrono::system_clock::now();
 	render << <blocks, threads >> > (cam, image, world, this, sampleCount);
+	auto end = std::chrono::system_clock::now();
+	auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+	std::cout << "raytracer" << numberCount++ << std::endl;
+	std::cout << "renderImage cost\t" << double(duration.count()) * std::chrono::microseconds::period::num / std::chrono::microseconds::period::den << " s" << std::endl;
+#else
+	render << <blocks, threads >> > (cam, image, world, this, sampleCount);
+#endif
+	// Kernel call for the computation of pixel colors.
 
 	// Denoise here.
 #ifdef OIDN_ENABLED
 	checkCudaErrors(cudaDeviceSynchronize());
+#ifdef CUDA_DEBUG
+	start = std::chrono::system_clock::now();
 	image->denoise();
 	checkCudaErrors(cudaDeviceSynchronize());
+	end = std::chrono::system_clock::now();
+	duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+	std::cout << "denoiseImage cost\t" << double(duration.count()) * std::chrono::microseconds::period::num / std::chrono::microseconds::period::den << " s" << std::endl;
+#else
+	image->denoise();
+	checkCudaErrors(cudaDeviceSynchronize());
+#endif
+	
 #endif	// OIDN_ENABLED
 	// Kernel call to fill the output buffers.
+#ifdef CUDA_DEBUG
+	start = std::chrono::system_clock::now();
 	display << <blocks, threads >> > (image);
-
 	checkCudaErrors(cudaGetLastError());
 	checkCudaErrors(cudaDeviceSynchronize());
+	end = std::chrono::system_clock::now();
+	duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+	std::cout << "displayImage cost\t" << double(duration.count()) * std::chrono::microseconds::period::num / std::chrono::microseconds::period::den << " s" << std::endl;
+#else
+	display << <blocks, threads >> > (image);
+	checkCudaErrors(cudaGetLastError());
+	checkCudaErrors(cudaDeviceSynchronize());
+#endif
+
 }
 #endif	// CUDA_ENABLED

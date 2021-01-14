@@ -1,11 +1,16 @@
 #pragma once
 #define CUDA_ENABLED
 #define OIDN_ENABLED
+#define CUDA_DEBUG
 
 #ifdef CUDA_ENABLED
 	#include <cuda_runtime_api.h>
 	#include <cuda.h>
 	#include <curand_kernel.h>
+#endif
+
+#ifdef CUDA_DEBUG
+#include <chrono>
 #endif
 
 #include <string>
@@ -39,7 +44,7 @@ const int nx = 1280;
 const int ny = 720;
 const int ns = 64;
 const int nsDenoise = 64;
-static int imageNr = 2;
+static int imageNr = 0;
 const int sampleNrToWrite = 1;
 const int sampleNrToWriteDenoise = sampleNrToWrite;
 const std::string folderName = "output";
