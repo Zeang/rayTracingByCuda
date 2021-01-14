@@ -1,2 +1,0 @@
-D:\Microsoft Visual Studio\Projects\RayTracingByCuda\x64\Debug\RayTracingByCuda.exe
-D:\Microsoft Visual Studio\Projects\RayTracingByCuda\x64\Debug\RayTracingByCuda.pdb
